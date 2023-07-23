@@ -29,13 +29,13 @@ const header = (() => {
 
   function linkHandlerFactory (page) {
     return function linkHandler (event) {
-        homePageLink.classList = ''
-        contactsPageLink.classList = ''
-        menuPageLink.classList = ''
+      homePageLink.classList = ''
+      contactsPageLink.classList = ''
+      menuPageLink.classList = ''
 
-        body.replaceChildren(header, page, footer)
-        content = page
-        event.target.className = 'selected'
+      body.replaceChildren(header, page, footer)
+      content = page
+      event.target.className = 'selected'
     }
   }
 
@@ -67,7 +67,7 @@ const footer = (() => {
   infoCredits.innerHTML =
     'Background image by <a href="https://www.freepik.com/free-vector/halloween-bat-decor-paper-cut-style_10817112.htm#page=2&query=bats&position=19&from_view=search&track=sph">zaie</a> ' +
     'on Freepik. <br /> Parchment image by <a href="https://www.freepik.com/free-vector/blank-brown-paper-design_15228111.htm#query=scroll&position=45&from_view=search&track=sph">rawpixel.com</a> ' +
-    'on Freepik. <br /> Icons are created by flaticon. </div>'
+    'on Freepik. <br /> Icons are created by flaticon, and menu images generated with Freepik AI generator.  </div>'
 
   footer.append(infoAddress, infoOperatingHours, infoCredits)
   return footer
